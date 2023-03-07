@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Kej\Desktop\bot\gta_rp.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98A678E6-34FC-4FCD-9342-D663963A7A31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>gta_rp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>2.0.1.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>gta_rp</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoUpdater.NET">
+      <HintPath>lib\AutoUpdater.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="xNet">
+      <HintPath>lib\xNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormCapcha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormDiag2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormFishIcon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormFishLure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormFishLureWithBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormFishrod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormFishrodWithBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormFullBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormGetRectNoBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormMsgOk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormPrimankaWithBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormPrimankaWithNoBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encrypt.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Diagnostic\FormDiag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostic\FormMouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFishMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFishPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keyboards.cs" />
+    <Compile Include="1Keyboards.cs" />
+    <Compile Include="ModifierKeys.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gta_Struct.cs" />
+    <Compile Include="1Gta_Struct.cs" />
+    <Compile Include="myThread.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ThreadDiag.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActivateForm.resx" />
+    <EmbeddedResource Include="FormCapcha.resx" />
+    <EmbeddedResource Include="FormDiag.resx" />
+    <EmbeddedResource Include="FormDiag2.resx" />
+    <EmbeddedResource Include="FormFishIcon.resx" />
+    <EmbeddedResource Include="FormFishLure.resx" />
+    <EmbeddedResource Include="FormFishLureWithBox.resx" />
+    <EmbeddedResource Include="FormFishMain.resx" />
+    <EmbeddedResource Include="FormFishPrice.resx" />
+    <EmbeddedResource Include="FormFishrod.resx" />
+    <EmbeddedResource Include="FormFishrodWithBox.resx" />
+    <EmbeddedResource Include="FormFullBox.resx" />
+    <EmbeddedResource Include="FormGetRectNoBox.resx" />
+    <EmbeddedResource Include="FormMouse.resx" />
+    <EmbeddedResource Include="FormMsgOk.resx" />
+    <EmbeddedResource Include="FormPrimankaWithBox.resx" />
+    <EmbeddedResource Include="FormPrimankaWithNoBox.resx" />
+    <EmbeddedResource Include="MainForm.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
